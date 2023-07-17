@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}body{
+    height: 100vh;
+}
+select{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} 

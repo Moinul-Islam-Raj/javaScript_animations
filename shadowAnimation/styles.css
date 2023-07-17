@@ -1,0 +1,34 @@
+
+*{
+    background-color: darkgray;
+}
+#canvas-1{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 3px solid black; */
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 5vh;
+    transform: translateX(-50%);
+}
+.container> *{
+    font-size: 2em;
+    color: black;
+}
+.slide{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5vh;
+    font-size: large;
+}
+input{
+    width: 50vw;
+}
+
