@@ -37,7 +37,7 @@ function first(text){
     //ctx.drawImage(img,0,0,canvas.width,canvas.height)
     data1 = ctx.getImageData(0,0,canvas.width,canvas.width)
 }
-first('@The_Raj)')
+first('@-The_Raj')
 
 class Particle {
     constructor(x,y,r,g,b){
