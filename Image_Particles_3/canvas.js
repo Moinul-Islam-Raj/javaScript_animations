@@ -15,7 +15,7 @@ const mouse = {
 
 let pArray = []
 let frame = 300
-ctx.fillStyle = 'hsl(' + frame + ',100%,50%'
+ctx.fillStyle = 'hsl(' + frame + ',100%,50%)'
 ctx.strokeStyle = 'white'
 let data1
 let aX = 150
@@ -37,7 +37,7 @@ function first(text){
     //ctx.drawImage(img,0,0,canvas.width,canvas.height)
     data1 = ctx.getImageData(0,0,canvas.width,canvas.width)
 }
-first('The_Raj.=@$#^')
+first('@The_Raj)')
 
 class Particle {
     constructor(x,y,r,g,b){
@@ -66,7 +66,7 @@ for(let y = 0;y < data1.height;y++){
         let yVal = (data1.data.length/data1.width) * y
         let dataVal = data1.data[x*4 + (yVal) -1]
         if(dataVal > 128){
-            pArray.push(new Particle(x*7 - aX,y*7 - aY,10,10,10))
+            pArray.push(new Particle(x*7 - aX,y*7 - aY,40,40,20))
         }
     }
 }
