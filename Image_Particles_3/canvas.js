@@ -37,7 +37,7 @@ function first(text){
     //ctx.drawImage(img,0,0,canvas.width,canvas.height)
     data1 = ctx.getImageData(0,0,canvas.width,canvas.width)
 }
-first('Raj')
+first('The_Raj.=@$#^')
 
 class Particle {
     constructor(x,y,r,g,b){
@@ -49,7 +49,7 @@ class Particle {
         this.baseX = x
         this.baseY = y
         this.size = 2.5
-        this.weight = (Math.random() * 1 + 1)
+        this.weight = (Math.random() * 1 + 0.5)
     }
     update(){
 
@@ -128,7 +128,7 @@ window.addEventListener('load',() => {
         connect()
 
         frame+=1.5
-        ctx.fillStyle = 'hsl(' + frame + ',100%,50%'
+        ctx.fillStyle = 'hsl(' + frame + ',100%,40%)'
         requestAnimationFrame(animate)
     }
     animate()
